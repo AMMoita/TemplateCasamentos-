@@ -1081,3 +1081,66 @@ textarea:focus-visible{
     right: 20px;
   }
 }
+
+.form-success-box {
+  display: none; /* começa escondido */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--button);
+  color: #f3efe5;
+  padding: 18px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 500;
+  text-align: center;
+  max-width: 90%;
+}
+
+@media (max-width: 600px){
+  .form-success-box {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}
+
+/* Modal */
+.form-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(245, 240, 220, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.form-modal-content {
+  background: #fff6e5;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#form-modal-close {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.form-modal-close:hover {
+  color: #555;
+}
+
+#form-modal-message {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #223126;
+  margin-top: 12px;
+}
