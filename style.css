@@ -473,18 +473,39 @@ a{
   background:var(--button);
   color:#f3efe5;
   text-align:center;
-  padding:88px 20px 110px;
+  padding:50px 20px 60px;
 }
 
-.site-footer .names{
+/* nomes principais */
+.site-footer .footer-main{
   font-size:clamp(28px, 2.4vw, 40px);
   font-family: Georgia, "Times New Roman", serif;
 }
 
-.site-footer .made{
-  margin-top:28px;
+/* data */
+.site-footer .footer-date{
+  margin-top:6px;
   font-size:14px;
-  opacity:.9;
+  opacity:.85;
+}
+
+/* linha decorativa */
+.site-footer .footer-divider{
+  width:40px;
+  height:1px;
+  background:rgba(243,239,229,0.4);
+  margin:18px auto;
+}
+
+/* crédito (tu) */
+.site-footer .footer-credit{
+  font-size:10px;
+  opacity:.65;
+}
+
+.site-footer .footer-credit a{
+  color:inherit;
+  text-decoration:none;
 }
 
 .page-plain{
@@ -994,3 +1015,4 @@ textarea:focus-visible{
 .form-note{
   margin-top:18px;
 }
+
