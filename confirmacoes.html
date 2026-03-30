@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirmações — Maria e João</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page page-plain">
+    <header class="site-header">
+      <div class="header-inner">
+        <nav class="main-nav">
+          <a href="cerimonia.html">A Cerimónia</a>
+          <a href="alojamento.html">Alojamento</a>
+          <a href="presentes.html">Presentes</a>
+        </nav>
+
+        <a class="site-brand serif" href="index.html">Maria e João</a>
+
+        <div class="header-actions">
+          <a class="btn active-btn" href="confirmacoes.html">Confirmações</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="confirm-page">
+      <div class="container-narrow">
+        <div class="confirm-head reveal">
+          <h1>Confirmações</h1>
+          <p>Estamos ansiosos por vos ver.</p>
+          <p>Se tiverem restrições alimentares específicas, por favor indiquem-nas no formulário abaixo.</p>
+          <p>Pedimos que confirmem a vossa presença até</p>
+          <div class="confirm-date">10 de fevereiro de 2025</div>
+        </div>
+
+        <div class="form-wrap reveal">
+          <p class="form-section-title">Nome</p>
+
+          <form action="#" method="post">
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="nome">Nome <span class="req">(obrigatório)</span></label>
+                <input class="input" id="nome" name="nome" type="text" required>
+              </div>
+
+              <div class="form-field">
+                <label for="sobrenome">Sobrenome <span class="req">(obrigatório)</span></label>
+                <input class="input" id="sobrenome" name="sobrenome" type="text" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="email">E-mail <span class="req">(obrigatório)</span></label>
+              <input class="input" id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form-field">
+              <label for="telefone">Telefone</label>
+              <input class="input" id="telefone" name="telefone" type="tel">
+            </div>
+
+            <div class="form-field">
+              <label for="presenca">Podemos contar consigo? <span class="req">(obrigatório)</span></label>
+              <div class="select-wrap">
+                <select class="select" id="presenca" name="presenca" required>
+                  <option value="">Selecione uma opção</option>
+                  <option>Sim, com muito gosto</option>
+                  <option>Infelizmente não poderei estar presente</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="adultos">Número de adultos</label>
+                <input class="input" id="adultos" name="adultos" type="number" min="0" value="1">
+              </div>
+
+              <div class="form-field">
+                <label for="criancas">Número de crianças</label>
+                <input class="input" id="criancas" name="criancas" type="number" min="0" value="0">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="restricoes">Alguma restrição alimentar? <span class="req">(obrigatório)</span></label>
+              <input class="input" id="restricoes" name="restricoes" type="text" required>
+            </div>
+
+            <div class="form-field">
+              <label for="musica">Sugestão de música para a festa</label>
+              <input class="input" id="musica" name="musica" type="text">
+            </div>
+
+            <div class="form-field">
+              <label for="comentarios">Questões e/ou comentários?</label>
+              <textarea class="textarea" id="comentarios" name="comentarios"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn small" type="submit">Enviar</button>
+            </div>
+
+            <p class="note form-note">
+              Nota: este formulário está preparado visualmente. Para enviar respostas reais, é preciso ligá-lo a Formspree, Netlify Forms ou backend próprio.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>
